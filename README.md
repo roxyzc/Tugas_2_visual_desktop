@@ -1,4 +1,4 @@
-### Tugas ###
+### Tugas
 
 <p>Nama  : Ridho Pikriyansyah</p>
 <p>Kelas : TI.21.A.3</p>
@@ -6,9 +6,9 @@
 
 ### Faktorial
 
-<img src="./gambar/faktorial.png"/>
+<img src="./gambar/faktoriall.png"/>
 
-### Menghitung Gaji karyawan ###
+### Menghitung Gaji karyawan
 
 <img src="./gambar/hitung_gaji.png"/>
 
