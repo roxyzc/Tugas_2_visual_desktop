@@ -14,4 +14,4 @@
 
 ### Perhitungan penjualan barang
 
-<img src="./gambar/perhitungan_penjualan_barang.png">
+<img src="./gambar/penjualan_barang.png">
