@@ -1,0 +1,153 @@
+object Form1: TForm1
+  Left = 1009
+  Height = 604
+  Top = 223
+  Width = 488
+  Caption = 'Mengitung gaji karyawan'
+  ClientHeight = 604
+  ClientWidth = 488
+  DesignTimePPI = 144
+  LCLVersion = '2.2.6.0'
+  object LbNamaPegawai: TLabel
+    Left = 48
+    Height = 25
+    Top = 48
+    Width = 116
+    Caption = 'Nama Pegawai'
+    ParentColor = False
+  end
+  object ENamaPegawai: TEdit
+    Left = 224
+    Height = 33
+    Top = 40
+    Width = 216
+    TabOrder = 0
+    TextHint = 'Masukkan nama pegawai'
+  end
+  object LbJabatan: TLabel
+    Left = 48
+    Height = 25
+    Top = 104
+    Width = 60
+    Caption = 'Jabatan'
+    ParentColor = False
+  end
+  object LbGajiPokok: TLabel
+    Left = 48
+    Height = 25
+    Top = 160
+    Width = 83
+    Caption = 'Gaji Pokok'
+    ParentColor = False
+  end
+  object EGajiPokok: TEdit
+    Left = 224
+    Height = 33
+    Top = 152
+    Width = 214
+    ReadOnly = True
+    TabOrder = 1
+    TextHint = '0'
+  end
+  object RgStatus: TRadioGroup
+    Left = 48
+    Height = 110
+    Top = 216
+    Width = 386
+    AutoFill = True
+    Caption = 'Status'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 80
+    ClientWidth = 382
+    Items.Strings = (
+      'Honorer'
+      'Tetap '
+    )
+    OnSelectionChanged = RgStatusSelectedChanges
+    ParentBidiMode = False
+    TabOrder = 2
+  end
+  object LbStatusTunjangan: TLabel
+    Left = 48
+    Height = 25
+    Top = 344
+    Width = 132
+    Caption = 'Status tunjangan'
+    ParentColor = False
+  end
+  object EStatusTunjangan: TEdit
+    Left = 224
+    Height = 33
+    Top = 337
+    Width = 216
+    ReadOnly = True
+    TabOrder = 3
+    TextHint = '0'
+  end
+  object BtnTotalGaji: TButton
+    Left = 48
+    Height = 38
+    Top = 400
+    Width = 395
+    Caption = 'Total Gaji'
+    OnClick = BtnTotalGajiClick
+    TabOrder = 4
+  end
+  object LbGajiBersih: TLabel
+    Left = 48
+    Height = 25
+    Top = 464
+    Width = 82
+    Caption = 'Gaji bersih'
+    ParentColor = False
+  end
+  object EGajiBersih: TEdit
+    Left = 224
+    Height = 33
+    Top = 456
+    Width = 216
+    ReadOnly = True
+    TabOrder = 5
+    TextHint = '0'
+  end
+  object BtnIsiDataLagi: TButton
+    Left = 48
+    Height = 38
+    Top = 520
+    Width = 161
+    Caption = 'Isi data lagi'
+    OnClick = BtnIsiDataLagiClick
+    TabOrder = 6
+  end
+  object BtnClose: TButton
+    Left = 259
+    Height = 38
+    Top = 520
+    Width = 179
+    Caption = 'Close'
+    OnClick = BtnCloseClick
+    TabOrder = 7
+  end
+  object CbJabatan: TComboBox
+    Left = 224
+    Height = 33
+    Top = 96
+    Width = 214
+    ItemHeight = 25
+    Items.Strings = (
+      'Direktur'
+      'Manager'
+      'Karyawan'
+    )
+    OnChange = CbJabatanChange
+    ReadOnly = True
+    TabOrder = 8
+    Text = 'Pilih Jabatan'
+  end
+end

@@ -1,0 +1,78 @@
+object Form1: TForm1
+  Left = 979
+  Height = 524
+  Top = 201
+  Width = 573
+  Caption = 'Faktorial'
+  ClientHeight = 524
+  ClientWidth = 573
+  DesignTimePPI = 144
+  LCLVersion = '2.2.6.0'
+  object GBHasil: TGroupBox
+    Left = 48
+    Height = 214
+    Top = 136
+    Width = 478
+    Caption = 'Hasil'
+    ClientHeight = 184
+    ClientWidth = 474
+    TabOrder = 0
+    object LbFaktorial: TLabel
+      Left = 24
+      Height = 25
+      Top = 24
+      Width = 66
+      Caption = 'Faktorial'
+      ParentColor = False
+    end
+    object EFaktorial: TEdit
+      Left = 128
+      Height = 33
+      Top = 24
+      Width = 304
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object LbHasil: TLabel
+      Left = 24
+      Height = 25
+      Top = 88
+      Width = 38
+      Caption = 'Hasil'
+      ParentColor = False
+    end
+    object EHasil: TEdit
+      Left = 128
+      Height = 33
+      Top = 88
+      Width = 304
+      ReadOnly = True
+      TabOrder = 1
+    end
+  end
+  object LbN: TLabel
+    Left = 48
+    Height = 25
+    Top = 56
+    Width = 13
+    Caption = 'N'
+    ParentColor = False
+  end
+  object EN: TEdit
+    Left = 96
+    Height = 33
+    Top = 56
+    Width = 224
+    TabOrder = 1
+    TextHint = 'Masukkan Nilai N'
+  end
+  object BtnHitung: TButton
+    Left = 352
+    Height = 38
+    Top = 51
+    Width = 169
+    Caption = 'Hitung'
+    OnClick = BtnHitungClick
+    TabOrder = 2
+  end
+end

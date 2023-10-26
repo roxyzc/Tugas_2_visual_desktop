@@ -1,0 +1,182 @@
+object FPenjualBarang: TFPenjualBarang
+  Left = 1106
+  Height = 575
+  Top = 259
+  Width = 531
+  Caption = 'Penjualan barang'
+  ClientHeight = 575
+  ClientWidth = 531
+  DesignTimePPI = 144
+  LCLVersion = '2.2.6.0'
+  object LbJudul: TLabel
+    Left = 64
+    Height = 32
+    Top = 32
+    Width = 400
+    Caption = 'Perhitungan Penjualan Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -28
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object LbKodeBarang: TLabel
+    Left = 64
+    Height = 25
+    Top = 104
+    Width = 102
+    Caption = 'Kode barang'
+    ParentColor = False
+  end
+  object CbKodeBarang: TComboBox
+    Left = 248
+    Height = 33
+    Top = 96
+    Width = 222
+    ItemHeight = 25
+    Items.Strings = (
+      'A01'
+      'B02'
+      'C03'
+      'D04'
+    )
+    OnChange = CbKodeBarangChange
+    TabOrder = 0
+    Text = 'Pilih kode barang'
+  end
+  object LbQuantity: TLabel
+    Left = 64
+    Height = 25
+    Top = 152
+    Width = 68
+    Caption = 'Quantity'
+    ParentColor = False
+  end
+  object EQuantity: TEdit
+    Left = 248
+    Height = 33
+    Top = 152
+    Width = 224
+    OnChange = EQuantityChange
+    TabOrder = 1
+    TextHint = '0'
+  end
+  object LbNamaBarang: TLabel
+    Left = 64
+    Height = 25
+    Top = 208
+    Width = 108
+    Caption = 'Nama barang'
+    ParentColor = False
+  end
+  object ENamaBarang: TEdit
+    Left = 248
+    Height = 33
+    Top = 208
+    Width = 222
+    ReadOnly = True
+    TabOrder = 2
+    TextHint = 'Masukkan nama barang'
+  end
+  object LbHargaSatuan: TLabel
+    Left = 64
+    Height = 25
+    Top = 264
+    Width = 105
+    Caption = 'Harga satuan'
+    ParentColor = False
+  end
+  object EHargaSatuan: TEdit
+    Left = 250
+    Height = 33
+    Top = 264
+    Width = 222
+    ReadOnly = True
+    TabOrder = 3
+    Text = '0'
+    TextHint = '0'
+  end
+  object LbSubTotal: TLabel
+    Left = 64
+    Height = 25
+    Top = 320
+    Width = 68
+    Caption = 'SubTotal'
+    ParentColor = False
+  end
+  object ESubTotal: TEdit
+    Left = 248
+    Height = 33
+    Top = 320
+    Width = 222
+    ReadOnly = True
+    TabOrder = 4
+    Text = '0'
+    TextHint = '0'
+  end
+  object LbDiskon: TLabel
+    Left = 64
+    Height = 25
+    Top = 376
+    Width = 55
+    Caption = 'Diskon'
+    ParentColor = False
+  end
+  object EDiskon: TEdit
+    Left = 248
+    Height = 33
+    Top = 376
+    Width = 222
+    ReadOnly = True
+    TabOrder = 5
+    Text = '0'
+    TextHint = '0'
+  end
+  object LbTotal: TLabel
+    Left = 64
+    Height = 25
+    Top = 432
+    Width = 37
+    Caption = 'Total'
+    ParentColor = False
+  end
+  object ETotal: TEdit
+    Left = 248
+    Height = 33
+    Top = 432
+    Width = 222
+    ReadOnly = True
+    TabOrder = 6
+    Text = '0'
+    TextHint = '0'
+  end
+  object btnHitung: TButton
+    Left = 64
+    Height = 38
+    Top = 496
+    Width = 113
+    Caption = 'Hitung'
+    OnClick = btnHitungClick
+    TabOrder = 7
+  end
+  object BtnUlang: TButton
+    Left = 208
+    Height = 38
+    Top = 496
+    Width = 113
+    Caption = 'Ulang'
+    OnClick = BtnUlangClick
+    TabOrder = 8
+  end
+  object BtnKeluar: TButton
+    Left = 357
+    Height = 38
+    Top = 496
+    Width = 113
+    Caption = 'Keluar'
+    OnClick = BtnKeluarClick
+    TabOrder = 9
+  end
+end
