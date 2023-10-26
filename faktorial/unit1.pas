@@ -12,11 +12,11 @@ type
 
   TForm1 = class(TForm)
     BtnHitung: TButton;
-    EHasil: TEdit;
+    EJumlah: TEdit;
     EFaktorial: TEdit;
     EN: TEdit;
     GBHasil: TGroupBox;
-    LbHasil: TLabel;
+    LbJumlah: TLabel;
     LbFaktorial: TLabel;
     LbN: TLabel;
     procedure BtnHitungClick(Sender: TObject);
@@ -62,7 +62,7 @@ begin
   for i := 1 to N do
       Jumlah := Jumlah + i;
 
-  EHasil.Text := IntToStr(Jumlah);
+  EJumlah.Text := IntToStr(Jumlah);
 end;
 
 end.

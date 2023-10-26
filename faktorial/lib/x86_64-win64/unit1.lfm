@@ -33,15 +33,15 @@ object Form1: TForm1
       ReadOnly = True
       TabOrder = 0
     end
-    object LbHasil: TLabel
+    object LbJumlah: TLabel
       Left = 24
       Height = 25
       Top = 88
-      Width = 38
-      Caption = 'Hasil'
+      Width = 55
+      Caption = 'Jumlah'
       ParentColor = False
     end
-    object EHasil: TEdit
+    object EJumlah: TEdit
       Left = 128
       Height = 33
       Top = 88
